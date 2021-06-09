@@ -1,0 +1,500 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body,html {
+    background-color: rgb(41, 41, 41);
+    height: 100%;
+    position: relative;
+}
+header {
+    width: 100%;
+    height: max-content;
+    position: fixed;
+    z-index: 1000;
+}
+#Song {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    width: 100%;
+    background-color: greenyellow;
+    align-items: center;
+    padding: 20px;
+    left: 0;
+    top: 0;
+    position: absolute;
+}
+#logo {
+    width: 30%;
+    display: flex;
+    font-size: 25px
+}
+#name_logo {
+    margin-right: 30px;
+}
+#sub_drowp {
+    display: none;
+    position: absolute;
+    left: 0;
+    padding-top: 20px;
+    z-index: 100;
+    width: 200px;
+}
+#sub_drowp li {
+    list-style: none;
+    background-color: white;
+    text-align: center;
+    padding-bottom: 5px;
+}
+#sub_drowp li a {
+    text-decoration: none;
+    color:black;
+    font-size: 20px;
+    padding: 5px 10px;
+}
+#sub_drowp li a:hover {
+    background-color: rgb(240, 240, 240);
+}
+#link_dr {
+    padding: 10px 0px;
+    border-bottom: 1px gray solid;
+}
+
+#rest_logo {
+    display: block;
+    position: relative;
+}
+#rest_logo .fa {
+    font-size: 16px;
+    position: relative;
+    top: -4px;
+    left: 5px;
+}
+#rest_logo:hover ul {
+    display: block;
+}
+.btn_control a {
+    margin-left: 30px;
+    border: 1px solid white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 18px;
+    padding: 12px 32px;
+}
+.link1 {
+    color: white;
+    background-color: black;
+}
+.link1:hover {
+    color: black;
+    background-color: white;
+}
+.link2 {
+    color: black;
+    background-color: white;
+}
+.link2:hover {
+    color: white;
+    background-color: black;
+}
+#second_header {
+    position: relative;
+    width: 100%;
+    left: 0;
+    top: 68px;
+    height: 66px;
+    background-color: black;
+}
+#second_header ul {
+    height: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+#second_header > ul > li {
+    margin-left: 30px;
+    list-style: none;
+}
+#second_header ul li a {
+    text-decoration: none;
+    padding: 10px;
+    padding-bottom: 18px;
+    font-size: 18px;
+    position: relative;
+}
+#first_a {
+    border-bottom: 5px white solid;
+    color: white;
+    font-weight: 500;
+}
+.rest_link {
+    color: rgb(78, 140, 255);
+}
+#second_header ul li:hover a{
+    border-bottom: 5px white solid;
+}
+.sub_menu {
+    position: absolute;
+    display: none;
+}
+.sub_menu ul {
+    display: flex;
+    flex-direction: column;
+    background-color: beige;
+    margin-top: 22px;
+}
+.sub_menu ul li {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 16px;
+    width: 300px;
+    list-style: none;
+    padding: 10px 20px;
+    border-bottom: 1px gray solid;
+}
+.sub_menu ul li:last-child {
+    border: none;
+}
+.sub_menu ul li:hover {
+    color: rgb(45, 187, 253);
+    background-color: rgb(206, 206, 206);
+}
+#second_header ul li:hover .sub_menu{
+    display: block;
+}
+#container {
+    width: 100%;
+    top: 133px;
+    position: relative;
+}
+#banner_title {
+    background-image: url(https://images.pexels.com/photos/1089438/pexels-photo-1089438.jpeg?cs=srgb&dl=pexels-markus-spiske-1089438.jpg&fm=jpg);
+    width: 100%;
+    height: 455px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    color: #fff;
+}
+#name_comunity_image {
+    margin:40px 0px;
+    width: 350px;
+    height: 110px;
+}
+#name_comunity_image img {
+    width: 100%;
+    height: 100%;
+}
+#intro_comunity {
+    font-size: 30px;
+    text-align: center;
+    width: 400px;
+    line-height: 33px;
+    color: rgba(255, 255, 255, 0.87);
+    margin-bottom: 40px;
+}
+#btn_control2 {
+    margin-top: 20px;
+}
+.background_wrap {
+    background-image: linear-gradient(90deg,rgb(82, 82, 82),rgb(34, 34, 34));
+    width: 100%;
+    height: 110px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    font-size: 20px;
+    border-top: 1px rgba(143, 143, 143, 0.253) solid;
+    
+}
+.background_wrap div {
+    text-transform: uppercase;
+    padding-bottom: 5px;
+    width: 270px;
+    cursor: pointer;
+    position: relative;
+}
+.background_wrap div::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    left: 0;
+    bottom: 0;
+}
+.link {
+    color: rgb(197, 197, 197);
+}
+.link::after {
+    background: rgb(197, 197, 197);
+}
+.active {
+    font-weight: 600;
+    color: white;
+}
+.active::after {
+    background-color: rgba(0, 153, 255, 0.733);
+}
+#slide_show {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.box_content {
+    margin: 20px;
+    width: 30%;
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    border-radius: 15px;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+.box_content::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    border: solid 1px gray;
+    border-radius: 15px;
+}
+.box_content:hover {
+    transform: scale(1.03);
+}
+#gift_icon {
+    font-size: 60px;
+    margin: 20px 0;
+    color: rgb(0, 212, 250);
+}
+#text_title {
+    margin: 10px;
+}
+#text_content {
+    display: block;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 20px;
+    color: rgba(253, 253, 253, 0.671);
+    margin-top: 20px;
+}
+#browse_more {
+    position: relative;
+    bottom: -33%;
+    text-align: center;
+    color: rgb(2, 192, 192);
+    font-size: 15px;
+    font-weight: 400;
+    text-decoration: none;
+}
+.fa-arrow-right {
+    margin-left: 5px;
+}
+.line {
+    position: absolute;
+    height: 0.5px;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    bottom: 10%;
+}
+.box1 {
+    background-image: url(./bg1.jpg);
+}
+.box2 {
+    background-image: url(./bg4.jpg);
+    
+}
+.subbox {
+    text-align: left;
+    padding: 30px;
+    color: white;
+}
+.subbox h3 {
+    line-height: 130%;
+    padding: 20px 0px;
+    font-size: 25px;
+    font-weight: 400;
+}
+.subbox p {
+    padding-top: 10px;
+    font-size: 15px;
+}
+.clock_icon img {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    bottom: -4px;
+    left: 1%;
+}
+.bottom_dir {
+    position: absolute;
+    bottom: 16px;
+    left: 30px;
+    color: white;
+    bottom: 3%;
+}
+.bottom_dir > span {
+    left: 10px;
+    position: relative;
+}
+.box3 {
+    background-image: url(./bg3.jpg);
+}
+#part2 {
+    margin: 30px;
+}
+.part2__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+.part2__title h1 {
+    color: gray;
+    font-weight: 300;
+}
+#part2 .part2__title .part2__link_more a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 400;
+    color: aqua;
+}
+#slide_show2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    padding-bottom: 40px;
+}
+
+.box_content2 {
+    background-color: rgb(36, 58, 73);
+    width: 30%;
+    height: 380px;
+    margin: 20px;
+    box-shadow: rgba(51, 51, 51, 0.3) 0px 1px 2px 2px, rgba(51, 51, 51, 0.15) 0px 2px 6px 2px;
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    z-index: 10;
+}
+.box_content2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    border: solid 1px gray;
+    border-radius: 15px;
+}
+.img_bg {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 50%;
+}
+.img_bg1{
+    background-image: url(https://gaming.lenovo.com/resized-image/__size/0x185/__key/communityserver-blogs-components-weblogfiles/00-00-00-00-25/legionslim7.png_2D00_800x400x2.jpg);
+}
+.img_bg2{
+    background-image: url(https://gaming.lenovo.com/resized-image/__size/0x185/__key/communityserver-blogs-components-weblogfiles/00-00-00-00-25/l7-thumn.jpg_2D00_800x400x2.jpg);
+}
+.img_bg3{
+    background-image: url(https://gaming.lenovo.com/resized-image/__size/0x185/__key/communityserver-blogs-components-weblogfiles/00-00-00-00-25/4578.header_2D00_2.jpg);
+}
+.img_bg4{
+    background-image: url(https://gaming.lenovo.com/resized-image/__size/0x185/__key/communityserver-blogs-components-weblogfiles/00-00-00-00-25/IIG_5F00_Ep_5F00_02_5F00_Still_5F00_01.png_2D00_800x400x2.png);
+}
+.box_content2__main_content {
+    padding: 30px;
+}
+.box_content2__title {
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    color: white;
+    text-transform: uppercase;
+}
+.dot_width {
+    margin: 5px 0 4px 0;
+    width: 40px;
+    height: 5px;
+    background-color: rgb(30, 119, 236);
+    border-radius: 20px;
+}
+.product {
+    color: white;
+    font-weight: 550;
+    font-size: 25px;
+}
+.box_content2__link {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 20px;
+    display: block;
+    padding-left: 30px;
+    cursor: pointer;
+    border-top: 0.5px solid gray;
+    padding-top: 10px;
+}
+.box_content2__link img {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    margin-bottom: -7px;
+    margin-right: 5px;
+}
+.box_content2__link a {
+    text-decoration: none;
+    color: rgb(46, 255, 255);
+    font-weight: 800;
+}
+.box_content2__link span {
+    color: rgb(146, 146, 146);
+}
+.box_content2:hover {
+    transform: scale(1.03);
+}
+
+.community_Forum_Wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.piece1 {
+    width: 60%;
+    padding-left: 15px;
+}
+.piece1 .broad_wrap {
+    width: 100%;
+    height: 50px;
+    border-radius: 10px 10px 0 0;
+    background-color: black;
+    margin-bottom: 20px;
+}
+.intro_about_tranning {
+    height: 200px;
+    width: 100%;
+    background-color: rgba(127, 183, 252, 0.747);
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
